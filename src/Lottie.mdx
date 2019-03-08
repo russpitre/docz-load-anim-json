@@ -7,7 +7,7 @@ route: /components/Lottie
 import { Playground, PropsTable } from 'docz';
 
 import Lottie from 'react-lottie';
-import animData from 'static/anim.json';
+import animData from 'public/animations/anim.json';
 
 # Lottie
 
@@ -16,16 +16,16 @@ The biggest thing since Myspace
 ## Demo
 
 <Playground>
-    <Lottie
-        options={{
-            loop: true,
-            autoplay: true,
-            animationData: animData,
-            rendererSettings: {
-                preserveAspectRatio: 'xMidYMid slice'
-            }
-        }}
-        height={400}
-        width={400}
-    />
+  <Lottie
+    options={{
+      loop: true,
+      autoplay: true,
+      animationData: animData,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice',
+      },
+    }}
+    height={400}
+    width={400}
+  />
 </Playground>
